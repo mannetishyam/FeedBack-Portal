@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -121,6 +122,8 @@ public class UserChoices extends Activity implements
 	
 	public boolean runLogout() {
 		//enter logging out code here please
+		Intent logint = new Intent (UserChoices.this,MainActivity.class);
+		startActivity(logint);
 		return true;
 	}
 
